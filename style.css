@@ -2,3 +2,9 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+div {
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: black;
+}
