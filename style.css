@@ -25,4 +25,22 @@ body {
 #userMenuContainer, #sketchContainer {
     border: black solid 4px;
     min-width: 100px;
+    flex: 1;
+}
+
+#userMenuContainer {
+    max-width: 40%;
+}
+
+#sketchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 40px;
+}
+
+#sketchBox {
+    display: flex;
+    flex: 1;
+    border: black solid 3px;
 }
