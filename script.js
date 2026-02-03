@@ -18,14 +18,15 @@ function fillSketchBox(gridSize) {
 
         gridSquare.style.width = `${squareSize}px`
         gridSquare.style.width = `${squareSize}px`
-        gridSquare.style.backgroundColor = "green";
+        gridSquare.style.boxSizing = "border-box"
+        gridSquare.style.border = "black solid 1px"
     }
 }
 
 resetBtn.addEventListener("click", () => {
     let gridSize = parseInt(gridSizeInput.value);
 
-    if (gridSize <= 32 && 4 <= gridSize) {
+    if (gridSize <= 100 && 4 <= gridSize) {
         fillSketchBox(gridSize);
     }   else {
         return console.log("Please enter a value between 4 and 100");
