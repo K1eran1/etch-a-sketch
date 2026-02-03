@@ -22,10 +22,10 @@ function fillSketchBox(gridSize) {
 resetBtn.addEventListener("click", () => {
     let gridSize = parseInt(gridSizeInput.value);
 
-    if (gridSize <= 100 && 4 <= gridSize) {
+    if (gridSize <= 32 && 4 <= gridSize) {
         fillSketchBox(gridSize);
     }   else {
-        return "Please enter a value between 4 and 100";
+        return console.log("Please enter a value between 4 and 32");
     }
 })
 
