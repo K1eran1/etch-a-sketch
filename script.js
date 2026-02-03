@@ -6,6 +6,8 @@ function fillSketchBox(gridSize) {
 
     sketchBox.innerHTML = '';
 
+    let squareSize = 500 / gridSize
+
     const gridSizeSquared = gridSize * gridSize;
 
     for (i = 0; i < gridSizeSquared; i++) {
@@ -14,8 +16,8 @@ function fillSketchBox(gridSize) {
 
         sketchBox.appendChild(gridSquare);
 
-        gridSquare.style.width =
-        gridSquare.style.height =
+        gridSquare.style.width = `${squareSize}px`
+        gridSquare.style.width = `${squareSize}px`
         gridSquare.style.backgroundColor = "green";
     }
 }
