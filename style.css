@@ -13,8 +13,18 @@ body {
 }
 
 #header, #footer {
+    display: flex;
     height: 60px;
     flex-shrink: 0;
+}
+
+#header {
+    justify-content: left;
+    padding-left: 100px;
+}
+
+#footer {
+    justify-content: center;
 }
 
 #main {
