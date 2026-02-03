@@ -7,11 +7,13 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    /*padding-left: 150px;
+    padding-right: 150px;*/
 }
 
 #header, #footer {
-    min-height: 60px;
+    height: 60px;
     flex-shrink: 0;
 }
 
@@ -35,13 +37,17 @@ body {
 #sketchContainer {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    padding: 40px;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    container-type: size;
 }
 
 #sketchBox {
-    display: flex;
-    flex: 1;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+    width: 100cqmin;
+    max-height: 100cqmin;
     border: black solid 3px;
 }
 
