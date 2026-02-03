@@ -8,6 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 #header, #footer {
@@ -41,8 +43,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 300px;
-    max-width: 40%;
+    flex: none;
+    width: 300px;
+    height: auto;
     padding: 20px;
 }
 
@@ -50,25 +53,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     overflow: hidden;
     padding: 10px;
-    container-type: size;
+    min-width: 510px;
+    min-height: 510px;
 }
 
 #sketchBox {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    aspect-ratio: 1 / 1;
-    width: 100cqmin;
-    max-height: 100cqmin;
+    flex: none;
+    width: 500px;
+    height: 500px;
     border: black solid 3px;
 }
 
 .list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    gap: 120px;
     flex-wrap: nowrap;
     list-style-type: none;
     padding: 0;
