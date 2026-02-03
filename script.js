@@ -1,7 +1,6 @@
-const sketchBox = document.getElementById("sketchBox")
-let gridSize = document.getElementById("gridSizeInput").value;
-
-console.log(gridSize)
+const sketchBox = document.getElementById("sketchBox");
+const gridSizeInput = document.getElementById("gridSizeInput");
+const resetBtn = document.getElementById("resetBtn");
 
 function fillSketchBox(gridSize) {
 
@@ -20,4 +19,16 @@ function fillSketchBox(gridSize) {
     }
 }
 
-fillSketchBox(gridSize)
+resetBtn.addEventListener("click", () => {
+    let gridSize = parseInt(gridSizeInput.value);
+
+    if (gridSize <= 100 && 4 <= gridSize) {
+        fillSketchBox(gridSize);
+    }   else {
+        return "Please enter a value between 4 and 100";
+    }
+})
+
+
+
+fillSketchBox(16)
