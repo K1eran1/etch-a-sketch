@@ -65,6 +65,7 @@ body {
     flex-wrap: wrap;
     box-sizing: border-box;
     flex: none;
+    outline: rgb(1, 1, 1) solid 4px;
     width: 500px;
     height: 500px;
 }
